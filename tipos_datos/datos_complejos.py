@@ -1,7 +1,10 @@
 #Datos de tipo compuesto o complejo
-#Son colecciones de datos de tipo simple o compuesto
+#Son colecciones de datos de tipo simple o compuesto)
 
-#LISTAS
+#len() funciona para colecciones y cadenas de texto
+
+                                    #LISTAS
+
 #Una lista es una colección ordenada de elementos de cualquier tipo de datos.
 #Los elementos se separan por comas
 #Además de ser una colección ordenada, es mutable, puede modificarse
@@ -35,3 +38,68 @@ print(lista_1)
 #Pues se insertará antes de esa posición
 #Usaremos lista.insert(posicion, elemento)
 lista_1.insert(2, "test")
+print(lista_1)
+
+                                   #DICCIONARIOS
+
+#Un diccionario es una colección ORDENADA y MUTABLE de PARES de elementos de cualquier tipo de datos.
+#Los elementos se separan por comas
+#El primer elemento es la clave y el segundo es el valor
+diccionario1 = {
+    "nombre":"Esteban",
+    "apellido":"Quito",
+    "Profesor": True,
+    "edad": 40
+}
+print(diccionario1)
+print(type(diccionario1))
+print(diccionario1["nombre"])
+print(diccionario1["apellido"])
+#Con .keys() podemos ver las claves y con .values()
+print(diccionario1.keys())
+print(diccionario1.values())
+#Con .items() creará duplas dentro de una lista, como [(clave, valor), (clave, valor)]
+print(diccionario1.items())
+
+#MODIFICAR un valor
+diccionario1["edad"] = 45
+print(diccionario1)
+#ELIMINAR el último elemento con .popitem()
+diccionario1.popitem()
+print(diccionario1)
+#AGREGAR elementos añadiendo una clave y un valor
+#Escribiremos una clave que no exista pues si ya existe, se modificará el valor
+diccionario1["ciudad"] = "Temuco"
+print(diccionario1)
+
+#VACIAR un diccionario con .clear()
+diccionario1.clear()
+print(diccionario1)
+
+                                    #CONJUNTOS (tipo set)
+
+#Un conjunto es una colección DESORDENADA y MUTABLE de elementos de cualquier tipo
+#Los elementos se separan por comas y no tienen ningún orden
+#Por lo tanto se agregan en cualquier lado y no tienen un último item
+conjunto1 = {"Erick", "avion", "ciudad", True, 45, 0, 3.59}
+print(type(conjunto1))
+#AÑADIR elementos, estos se añadirán en cualquier lado
+conjunto1.add(False)
+print(conjunto1)
+
+#No podemos usar el pop, pues como no tenemos un último ítem, borrará cualquier elemento
+#ELIMINAR elemnto especifico con  .remove(elemento)
+diccionario1.remove()
+
+#UPDATE?
+#SUBCONJUTO saber si un conjunto es subconjunto de otro con" .issubset"
+
+#TUPLA
+#Una tupla es una colección ORDENADA y NO MUTABLE de elementos de cualquier tipo de datos
+#los elementos se separan por comas.
+tupla1 = ("Erick", 49, True)
+print(tupla1)
+print(type(tupla1))
+print(tupla1.count(49))
+print(tupla1.index(49))
+#No se puede agregar ni eliminar elementos, ni borrar la tupla

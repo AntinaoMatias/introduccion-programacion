@@ -60,3 +60,4 @@ print(num1*num2)
 
 #Con el método type nos devuelve el tipo de dato de una variable
 print(type(numero_entero))
+
