@@ -36,7 +36,8 @@ print(despedida2)
 
 saludo = "Buenos días"
 nombre = input("Escriba su nombre: ")
-texto_final = saludo + nombre
+#Creamos una variable para concatenar dos cadenas
+texto_final = saludo + " " + nombre
 print(texto_final)
 
 #De esta manera escribimos comentarios
@@ -53,3 +54,9 @@ numero_decimal = 49.99
 dato_verdadero = True
 dato_falso = False
 
+num1 = 35
+num2 = 12.65
+print(num1*num2)
+
+#Con el método type nos devuelve el tipo de dato de una variable
+print(type(numero_entero))
