@@ -13,3 +13,14 @@ print(num2.is_integer())
 #Consultamos si es real
 print(num.is_real())
 print(num2.is_real())
+
+# LISTAS
+
+# max() Devuelve el número más grande
+max(lista)
+
+# min() Devuelve el número más pequeño
+min(lista)
+
+# round() Devuelve el redondeo
+round(lista)
