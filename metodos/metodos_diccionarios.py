@@ -1,14 +1,37 @@
 
 # METODOS DICCIONARIOS
 
-# clear() Elimina todos los elementos de la colección
-# copy() Copia la colección
-# fromkeys() Crea un nuevo diccionario recibiendo una colección para claves y una colección para valores. dict.fromkeys() donde dict crea unn nuevo diccionario
-# get() Retorna el valor de una clave específica
+diccionario = {1 : "nombre", 2 : "apellido"}
+# .clear() Elimina todos los elementos de la colección
+diccionario.clear()
+
+# .copy() Copia la colección
+diccionario1 = diccionario2.copy()
+
+# .fromkeys() Crea un nuevo diccionario recorriendo una colección de claves x y asignandoles un valor y
+# dict. Crea una colección
+nuevo_diccionario = dict.fromkeys(x, y)
+
+# .get() Retorna el valor de una clave específica
+diccionario.get(clave)
+
+# .keys() Devuelve una lista con las claves del diccionario
+diccionario.keys()
+
+# .values() Devuelve una lista con los valores del diccionario
+diccionario.values()
+
+# .pop() Elimina el elemento completo (Su clave y valor) especificando la clave
+diccionario.pop(clave)
+
+# .popitem() Elimina el último elemento, incluyendo su clave y su valor
+diccionario.popitem()
+
+# .update() Actualiza o crea un elemento indicando su clave. Si la clave existe, actualiza. Si no existe la crea.
+diccionario.update(clave : valor)
+
 # items() Permite recorrer cada uno de los elementos de una colección
-# keys() Devuelve una lista1 con las claves del diccionario
-# pop() Elimina el elemento completo (Su clave y valor) especificando la clave
-# popitem() Elimina el último elemento, incluyendo su clave y su valor
-# update() Actualiza un elemento indicando su clave
-# values() Devuelve una lista1 con los valores del diccionario
-#
+
+
+
+
