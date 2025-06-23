@@ -6,12 +6,23 @@
 #    acciones_condicion_verdadera
 #else:
 #    acciones_condicion_falsa
+
+#También podemos usar elif, para responder a otras condiciones
+#if condicion:
+#   acciones_condicion_verdadera
+#elif condicion2:
+#   acciones_condicion2_verdadera
+#else:
+#   acciones_condicion_falsa
+
+
 #Ejemplo: 
 edad = input("Ingrese su edad: ")
 if int(edad) >= 18:
     print("Eres mayor de edad")
 else:
     print("Eres menor de edad")
+
 # Otro ejemplo
 # Grupos SOCIOECONÓMICOS en Chile
 # AB $7177530
@@ -38,4 +49,6 @@ elif 2072853 < sueldo <= 3010391:
     print("Ud. pertenece al grupo C1a")
 elif 3010391 < sueldo:
     print("Ud. pertenece al grupo AB")
+else:
+    print("El valor ingresado NO corresponde")
 
