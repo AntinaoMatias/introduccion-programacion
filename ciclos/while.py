@@ -31,11 +31,11 @@ print("Seleccione el método a usar")
 usar = "for"
 #usar = "while"
 
-i = 1
-e = 1
-
 print("Tablas de multiplicar: ")
+
 if (usar == "while"):
+    i = 1
+    e = 1
     while i < 11:
         print("============")
         print(f"Tabla del {i}")
@@ -57,3 +57,5 @@ if (usar == "for"):
     e = 1
     i += 1
 
+#En el FOR no es necesario definir las variables,
+# pues se definen dentro del rango después de in
