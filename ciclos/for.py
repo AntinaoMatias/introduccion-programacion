@@ -58,3 +58,13 @@ num_int = int(num_str)
 for i in range(1, 11):
     print(f"{num_int} * {i} = {i*num_int}")
 
+
+diccionario = {
+    "nombre" : "Matias",
+    "apellido" : "Antinao",
+    "edad" : 21
+}
+
+for clave, valor in diccionario.items:
+print(f"Clave: {clave} y su valor: {valor}")
+
