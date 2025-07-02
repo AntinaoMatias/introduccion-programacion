@@ -61,11 +61,15 @@ while (continuar == True):
     print("7. Detener programa")
     
     #Solo recibe 1 al 7
-    while 1 < seleccion < 8:
+    while 0 < seleccion < 8:
         try:
-            seleccion = int(input())
+            seleccion = int(input("Selección: "))
         except:
             print("El valor ingresado no e válido")
     
-    if (seleccion = 1):
-        temperatura = input("Ingrese la temperatura en grados celsius: ")
+    if (seleccion == 1):
+        try:
+            temperatura = float(input("Ingrese la temperatura en grados celsius: "))
+            celsius_kelvin(temperatura)
+        except:
+            print("El valor no es válido")
