@@ -3,11 +3,11 @@
 
 
 # EJEMPLO 1
-#numero = 0
-#while numero <= 50:
-#    numero = numero + 1
-#    if numero % 2 == 0:
-#        print(numero)
+numero = 0
+while numero <= 50:
+    numero = numero + 1
+    if numero % 2 == 0:
+        print(numero)
 
 # EJERCICIO 1
 #Solicitar un número al usuario para imprimir una tabla de
