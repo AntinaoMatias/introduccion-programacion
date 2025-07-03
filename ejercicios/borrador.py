@@ -48,16 +48,23 @@ def kelvin_to_farenheit(temperatura):
         print("Valor no corresponde")
 
 def menu_conversiones():
-    print("Seleccione la conversión a realizar")
+    print("====================================")
+    print("==== CONVERSIÓN DE TEMPERATURAS ====")
+    print("====================================")
+    print()
+    print("Seleccione la conversión a realizar:")
+    print()
     print("1. Celsius a Kelvin")
     print("2. Celsius a Farenheit")
+    print("- - - - - - - - - - - -")
     print("3. Kelvin a Celsius")
     print("4. Kelvin a Farenheit")
+    print("- - - - - - - - - - - -")
     print("5. Farenheit a Celsius")
     print("6. Farenheit a Kelvin")
+    print("- - - - - - - - - - - -")
     print("0. Detener programa")
-
-
+    print()
 
 
 
@@ -77,39 +84,44 @@ while (continuar == "s" or continuar == "S" or continuar == "Si" or continuar ==
     try:
         if (seleccion == 1):
             temperatura = float(input("Ingrese la temperatura en celsius: "))
-            print(celsius_kelvin(temperatura))
-            continuar = input("¿Desea realizar otra operación? [S/N]: ")
+            print(f"{temperatura}°C son {celsius_kelvin(temperatura)}°K")
             
         elif (seleccion == 2):
             temperatura = float(input("Ingrese la temperatura en celsius: "))
-            print(celsius_to_farenheit(temperatura))
-            continuar = input("¿Desea realizar otra operación? [S/N]: ")
+            print(f"{temperatura}°C son {celsius_to_farenheit(temperatura)}°F")
             
         elif (seleccion == 3):
             temperatura = float(input("Ingrese la temperatura en kelvin: "))
-            print(kelvin_to_celsius(temperatura))
-            continuar = input("¿Desea realizar otra operación? [S/N]: ")
+            print(f"{temperatura}°K son {kelvin_to_celsius(temperatura)}°C")
             
         elif (seleccion == 4):
             temperatura = float(input("Ingrese la temperatura en kelvin: "))
-            print(kelvin_to_farenheit(temperatura))
-            continuar = input("¿Desea realizar otra operación? [S/N]: ")
+            print(f"{temperatura}°K son {kelvin_to_farenheit(temperatura)}°F")
             
         elif (seleccion == 5):
             temperatura = float(input("Ingrese la temperatura en farenheit: "))
-            print(farenheit_to_celsius(temperatura))
-            continuar = input("¿Desea realizar otra operación? [S/N]: ")
+            print(f"{temperatura}°F son {farenheit_to_celsius(temperatura)}°C")
             
         elif (seleccion == 6):
             temperatura = float(input("Ingrese la temperatura en farenheit: "))
-            print(farenheit_to_kelvin(temperatura))
+            print(f"{temperatura}°F son {farenheit_to_kelvin(temperatura)}°K")
+        else:
+            pass
+        
+        # Otra operación
+        if (0 < seleccion < 7):
             continuar = input("¿Desea realizar otra operación? [S/N]: ")
-            
         elif (seleccion == 0):
             continuar = "n"
         else:
-            print("El valor no es válido")
-            continuar = input("¿Desea intentarlo de nuevo? [S/N]: ")
+            # Selección fuera del rango 0-6
+            print("Selección inválida")
+            continuar = input("¿Desea intentar nuevamente? [S/N]: ")
     except:
+        # Error: Decimales o carácteres en selección
         print("Valor ingresado no corresponde")
-        continuar = input("¿Desea intentarlo de nuevo? [S/N]: ")
+        continuar = input("¿Desea intentar nuevamente? [S/N]: ")
+
+
+
+

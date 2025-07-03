@@ -1,0 +1,34 @@
+# Escriba un programa que pida dos números y
+# conteste cuál es el menor y cuál es el mayor, o que escriba que son iguales
+
+def comparar(a, b):
+    try:
+        if a < b:
+            print(f"{a} es menor que {b}")
+        elif a > b:
+            print(f"{a} es mayor que {b}")
+        else:
+            print(f"{a} es igual a {b}")
+    except:
+        print("Valor no corresponde")
+    pass
+
+def interfaz():
+    print("=============================")
+    print("==== Comparando números ====")
+    print("=============================")
+    print()
+    print("Ingrese sólo números enteros.")
+    print()
+
+
+
+
+try:
+    interfaz()
+    a = int(input("Ingrese el primer número: "))
+    b = int(input("Ingrese el segundo número: "))
+    comparar(a, b)
+except:
+    print("Valor no corresponde")
+    print("Recuerde solo utilizar números enteros.")
