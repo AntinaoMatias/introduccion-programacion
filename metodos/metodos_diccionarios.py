@@ -33,5 +33,3 @@ diccionario.update(clave : valor)
 # items() Permite recorrer cada uno de los elementos de una colección
 
 
-
-
